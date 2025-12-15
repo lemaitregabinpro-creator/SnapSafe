@@ -50,7 +50,7 @@ const StickyBanner: React.FC = () => {
 
   return (
     <div className="sticky top-0 z-50 bg-red-600 text-white py-3 px-4 shadow-lg text-center font-bold text-sm md:text-base tracking-wide animate-pulse">
-      🔥 OFFRE DE LANCEMENT : -50% sur les 100 premières licences ! Se termine dans{' '}
+      🔥 OFFRE DE LANCEMENT : -50% ! Se termine dans{' '}
       <span className="font-mono bg-black/30 px-2 py-0.5 rounded mx-1">
         {formatTime(timeLeft.hours)}:{formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
       </span>

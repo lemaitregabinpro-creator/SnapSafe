@@ -1,7 +1,6 @@
 import React from 'react';
 import StickyBanner from './components/StickyBanner';
 import Comparison from './components/Comparison';
-import DemoVideoPlaceholder from './components/DemoVideoPlaceholder';
 import { Icons, FAQ_ITEMS, LEMON_SQUEEZY_URL } from './constants';
 
 const App: React.FC = () => {
@@ -33,19 +32,33 @@ const App: React.FC = () => {
             Leur export officiel casse les dates, mélange tout et plante. <span className="text-white font-bold">SnapSafe</span> est le seul outil qui télécharge <span className="underline decoration-yellow-400 decoration-2 underline-offset-2">VOS 10 000 photos</span> en gardant la chronologie parfaite.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-16">
-            <button 
-              onClick={scrollToPricing}
-              className="w-full md:w-auto px-8 py-4 bg-snap-yellow text-black text-lg font-black uppercase tracking-wider rounded-lg shadow-[0_0_20px_rgba(255,252,0,0.4)] hover:shadow-[0_0_30px_rgba(255,252,0,0.6)] hover:scale-105 transition-all transform"
+          <div className="flex flex-col items-center justify-center gap-4 mb-16">
+            <a 
+              href={LEMON_SQUEEZY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full md:w-auto px-8 py-4 bg-snap-yellow text-black text-lg font-black uppercase tracking-wider rounded-lg shadow-[0_0_20px_rgba(255,252,0,0.4)] hover:shadow-[0_0_30px_rgba(255,252,0,0.6)] hover:scale-105 transition-all transform text-center"
             >
               Sauver mes 10 ans de souvenirs (15€)
-            </button>
-            <span className="text-sm text-gray-500">Compatible Windows, Mac & Linux</span>
+            </a>
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-sm text-gray-500">Disponible sur Windows.</span>
+              <a 
+                href="./mac.html" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-snap-yellow hover:text-yellow-300 underline underline-offset-2 transition-colors"
+              >
+                Utilisateur Mac ? Cliquez ici pour être prévenu.
+              </a>
+            </div>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-             <DemoVideoPlaceholder />
-          </div>
+          <img 
+            src="./app_in_action.png" 
+            alt="SnapSafe en action"
+            className="max-w-2xl mx-auto mt-16 rounded-xl border-2 border-slate-700 shadow-2xl shadow-yellow-500/10"
+          />
         </div>
       </section>
 
@@ -73,6 +86,47 @@ const App: React.FC = () => {
             <p className="mt-8 text-xl text-gray-300 leading-relaxed">
               Le faire à la main prendrait des semaines de clics douloureux. Notre automate le fait pendant que vous dormez. Pour le prix de deux cafés, vous récupérez votre temps <span className="font-bold text-white">ET</span> vos souvenirs.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS SECTION */}
+      <section className="py-24 bg-black border-t border-gray-800">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl md:text-5xl font-black text-center mb-16">
+            Comment ça marche
+          </h2>
+          
+          <div className="space-y-12">
+            {/* Step 1 */}
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-8 hover:border-gray-700 transition-colors">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Étape 1 : Demandez vos données Snapchat
+              </h3>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Connectez-vous à votre compte sur accounts.snapchat.com, allez dans 'Mes Données', et demandez votre archive. Vous recevrez un email avec un lien vers votre fichier .zip.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-8 hover:border-gray-700 transition-colors">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Étape 2 : Lancez SnapSafe
+              </h3>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Ouvrez SnapSafe, entrez votre clé de licence, et glissez simplement le fichier .zip dans l'application.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-gray-900 border border-gray-800 rounded-xl p-8 hover:border-gray-700 transition-colors">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Étape 3 : Récupérez vos souvenirs
+              </h3>
+              <p className="text-lg text-gray-400 leading-relaxed">
+                Laissez la magie opérer. Retrouvez vos souvenirs triés et réparés dans un dossier sur votre ordinateur, prêts à être transférés sur votre téléphone.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -116,9 +170,11 @@ const App: React.FC = () => {
 
             <a 
               href={LEMON_SQUEEZY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full py-5 bg-snap-yellow text-black text-xl font-black uppercase tracking-wider rounded-lg shadow-lg hover:bg-yellow-300 transition-colors mb-4"
             >
-              Obtenir ma licence à -50%
+              Profiter de l'offre à -50%
             </a>
             
             <div className="flex items-center justify-center gap-2 text-xs text-gray-500">

@@ -36,7 +36,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: "Ça marche sur Mac et Windows ?",
-    answer: "Oui. SnapSafe est une application de bureau sécurisée pour Windows et macOS. Vous téléchargez un installateur (.exe ou .dmg), vous l'installez en deux clics, et le logiciel est prêt. C'est 100% sécurisé et sans virus."
+    answer: "Pour l'instant, SnapSafe est disponible sur Windows. La version macOS est notre priorité n°1 et arrive très bientôt. Vous pouvez vous inscrire sur notre liste d'attente pour être le premier prévenu de sa sortie !"
   },
   {
     question: "J'ai 50 000 snaps, ça va prendre combien de temps ?",
@@ -44,4 +44,4 @@ export const FAQ_ITEMS = [
   }
 ];
 
-export const LEMON_SQUEEZY_URL = "#"; // Replace with actual URL logic if needed
+export const LEMON_SQUEEZY_URL = "https://snapsafe.lemonsqueezy.com/buy/bbac342c-f3f7-4ee7-9c8e-73c2e5a4b608";
