@@ -44,4 +44,4 @@ export const FAQ_ITEMS = [
   }
 ];
 
-export const LEMON_SQUEEZY_URL = "https://snapsafe.lemonsqueezy.com/buy/bbac342c-f3f7-4ee7-9c8e-73c2e5a4b608";
+export const LEMON_SQUEEZY_URL = "https://snapsafe.lemonsqueezy.com/buy/bbac342c-f3f7-4ee7-9c8e-73c2e5a4b608?embed=1&media=0&discount=0";

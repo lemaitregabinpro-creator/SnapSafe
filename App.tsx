@@ -35,9 +35,7 @@ const App: React.FC = () => {
           <div className="flex flex-col items-center justify-center gap-4 mb-8 sm:mb-16 px-2">
             <a 
               href={LEMON_SQUEEZY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-snap-yellow text-black text-base sm:text-lg font-black uppercase tracking-wider rounded-lg shadow-[0_0_20px_rgba(255,252,0,0.4)] hover:shadow-[0_0_30px_rgba(255,252,0,0.6)] hover:scale-105 transition-all transform text-center"
+              className="lemonsqueezy-button w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-snap-yellow text-black text-base sm:text-lg font-black uppercase tracking-wider rounded-lg shadow-[0_0_20px_rgba(255,252,0,0.4)] hover:shadow-[0_0_30px_rgba(255,252,0,0.6)] hover:scale-105 transition-all transform text-center"
             >
               Sauver mes 10 ans de souvenirs (15€)
             </a>
@@ -168,9 +166,7 @@ const App: React.FC = () => {
 
             <a 
               href={LEMON_SQUEEZY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full py-4 sm:py-5 bg-snap-yellow text-black text-base sm:text-lg md:text-xl font-black uppercase tracking-wider rounded-lg shadow-lg hover:bg-yellow-300 transition-colors mb-4"
+              className="lemonsqueezy-button block w-full py-4 sm:py-5 bg-snap-yellow text-black text-base sm:text-lg md:text-xl font-black uppercase tracking-wider rounded-lg shadow-lg hover:bg-yellow-300 transition-colors mb-4"
             >
               OBTENIR L'UNE DES 100 LICENCES À -50%
             </a>
