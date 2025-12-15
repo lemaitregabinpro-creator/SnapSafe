@@ -139,7 +139,7 @@ const App: React.FC = () => {
         <div className="max-w-lg mx-auto px-4 relative z-10">
           <div className="bg-card border-2 border-snap-yellow shadow-[0_0_40px_rgba(255,252,0,0.15)] rounded-2xl p-8 md:p-12 text-center transform hover:scale-[1.02] transition-transform duration-300">
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white font-bold px-4 py-1 rounded-full text-sm uppercase tracking-widest shadow-lg">
-              Offre limitée
+              Pour les 100 premiers acheteurs
             </div>
             
             <h3 className="text-2xl font-bold text-white mb-2">Licence À Vie</h3>
@@ -174,7 +174,7 @@ const App: React.FC = () => {
               rel="noopener noreferrer"
               className="block w-full py-5 bg-snap-yellow text-black text-xl font-black uppercase tracking-wider rounded-lg shadow-lg hover:bg-yellow-300 transition-colors mb-4"
             >
-              Profiter de l'offre à -50%
+              OBTENIR L'UNE DES 100 LICENCES À -50%
             </a>
             
             <div className="flex items-center justify-center gap-2 text-xs text-gray-500">
