@@ -8,9 +8,9 @@ import 'swiper/css/effect-fade';
 
 const Comparison: React.FC = () => {
   return (
-    <section className="py-20 bg-snap-dark">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-black text-center mb-16">
+    <section className="py-12 md:py-20 bg-snap-dark">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-center mb-8 sm:mb-12 md:mb-16">
           La Preuve Visuelle
         </h2>
 
@@ -30,18 +30,18 @@ const Comparison: React.FC = () => {
           >
             {/* Slide 1 - Le Problème */}
             <SwiperSlide>
-              <div className="flex flex-col items-center justify-center min-h-[500px]">
-                <h3 className="text-2xl md:text-3xl font-bold text-red-500 mb-6 text-center">
+              <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-red-500 mb-4 sm:mb-6 text-center px-2">
                   ❌ L'Export Gratuit de Snapchat
                 </h3>
-                <div className="w-full max-w-4xl mb-4 rounded-lg overflow-hidden border-2 border-red-500/30 shadow-2xl">
+                <div className="w-full max-w-4xl mb-3 sm:mb-4 rounded-lg overflow-hidden border-2 border-red-500/30 shadow-2xl">
                   <img 
                     src="./chaos.png" 
                     alt="Dossier en vrac avec fichiers illisibles" 
                     className="w-full h-auto"
                   />
                 </div>
-                <p className="text-gray-400 text-center leading-relaxed text-lg max-w-2xl">
+                <p className="text-gray-400 text-center leading-relaxed text-sm sm:text-base md:text-lg max-w-2xl px-2">
                   Des noms de fichiers illisibles et des dates réinitialisées. Retrouver un souvenir est impossible.
                 </p>
               </div>
@@ -49,11 +49,11 @@ const Comparison: React.FC = () => {
 
             {/* Slide 2 - Étape 1 */}
             <SwiperSlide>
-              <div className="flex flex-col items-center justify-center min-h-[500px]">
-                <h3 className="text-2xl md:text-3xl font-bold text-snap-yellow mb-6 text-center">
+              <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-snap-yellow mb-4 sm:mb-6 text-center px-2">
                   ✅ Étape 1 : Un dossier unique pour tout centraliser
                 </h3>
-                <div className="w-full max-w-4xl mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
+                <div className="w-full max-w-4xl mb-3 sm:mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
                   <img 
                     src="./resultat_01.png" 
                     alt="Dossier principal SnapSafe_Work_In_Progress" 
@@ -65,11 +65,11 @@ const Comparison: React.FC = () => {
 
             {/* Slide 3 - Étape 2 */}
             <SwiperSlide>
-              <div className="flex flex-col items-center justify-center min-h-[500px]">
-                <h3 className="text-2xl md:text-3xl font-bold text-snap-yellow mb-6 text-center">
+              <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-snap-yellow mb-4 sm:mb-6 text-center px-2">
                   ✅ Étape 2 : Vos souvenirs triés par année
                 </h3>
-                <div className="w-full max-w-4xl mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
+                <div className="w-full max-w-4xl mb-3 sm:mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
                   <img 
                     src="./resultat_02.png" 
                     alt="Sous-dossiers par année" 
@@ -81,11 +81,11 @@ const Comparison: React.FC = () => {
 
             {/* Slide 4 - Étape 3 */}
             <SwiperSlide>
-              <div className="flex flex-col items-center justify-center min-h-[500px]">
-                <h3 className="text-2xl md:text-3xl font-bold text-snap-yellow mb-6 text-center">
+              <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-snap-yellow mb-4 sm:mb-6 text-center px-2">
                   ✅ Étape 3 : Une organisation parfaite par mois
                 </h3>
-                <div className="w-full max-w-4xl mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
+                <div className="w-full max-w-4xl mb-3 sm:mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
                   <img 
                     src="./resultat_03.png" 
                     alt="Sous-dossiers par mois" 
@@ -97,11 +97,11 @@ const Comparison: React.FC = () => {
 
             {/* Slide 5 - Étape 4 */}
             <SwiperSlide>
-              <div className="flex flex-col items-center justify-center min-h-[500px]">
-                <h3 className="text-2xl md:text-3xl font-bold text-snap-yellow mb-6 text-center">
+              <div className="flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-snap-yellow mb-4 sm:mb-6 text-center px-2">
                   ✅ Étape 4 : Chaque fichier retrouve son nom et sa date
                 </h3>
-                <div className="w-full max-w-4xl mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
+                <div className="w-full max-w-4xl mb-3 sm:mb-4 rounded-lg overflow-hidden border-2 border-yellow-500/30 shadow-2xl">
                   <img 
                     src="./resultat_04.png" 
                     alt="Fichiers finaux avec noms clairs" 
@@ -158,12 +158,19 @@ const Comparison: React.FC = () => {
         .comparison-swiper .swiper-button-prev {
           background-color: rgba(255, 252, 0, 0.1);
           backdrop-filter: blur(10px);
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
           border: 2px solid rgba(255, 252, 0, 0.3);
           transition: all 0.3s ease;
           z-index: 10;
+        }
+        @media (min-width: 640px) {
+          .comparison-swiper .swiper-button-next,
+          .comparison-swiper .swiper-button-prev {
+            width: 50px;
+            height: 50px;
+          }
         }
         .comparison-swiper .swiper-button-next:hover,
         .comparison-swiper .swiper-button-prev:hover {
@@ -173,22 +180,39 @@ const Comparison: React.FC = () => {
         }
         .comparison-swiper .swiper-button-next::after,
         .comparison-swiper .swiper-button-prev::after {
-          font-size: 20px;
+          font-size: 16px;
           font-weight: bold;
+        }
+        @media (min-width: 640px) {
+          .comparison-swiper .swiper-button-next::after,
+          .comparison-swiper .swiper-button-prev::after {
+            font-size: 20px;
+          }
         }
         
         /* Pagination */
         .comparison-swiper .swiper-pagination {
           position: relative !important;
-          margin-top: 30px;
+          margin-top: 20px;
           bottom: auto !important;
         }
+        @media (min-width: 640px) {
+          .comparison-swiper .swiper-pagination {
+            margin-top: 30px;
+          }
+        }
         .comparison-swiper .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
+          width: 10px;
+          height: 10px;
           background: rgba(255, 252, 0, 0.5);
           opacity: 0.5;
           transition: all 0.3s ease;
+        }
+        @media (min-width: 640px) {
+          .comparison-swiper .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+          }
         }
         .comparison-swiper .swiper-pagination-bullet-active {
           opacity: 1;

@@ -7,7 +7,11 @@ export default defineConfig(({ mode }) => {
     return {
       server: {
         port: 3000,
-        host: '0.0.0.0',
+        host: true, // Équivalent à 0.0.0.0
+        // On retire la config HMR manuelle qui causait le conflit
+        watch: {
+          usePolling: true,
+        },
       },
       plugins: [react()],
       define: {
@@ -17,6 +21,17 @@ export default defineConfig(({ mode }) => {
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
+        }
+      },
+      optimizeDeps: {
+        include: ['react', 'react-dom', 'react/jsx-runtime', 'swiper', 'swiper/react'],
+        force: false
+      },
+      build: {
+        rollupOptions: {
+          output: {
+            manualChunks: undefined
+          }
         }
       }
     };
