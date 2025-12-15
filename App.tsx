@@ -44,9 +44,7 @@ const App: React.FC = () => {
             <div className="flex flex-col items-center gap-2">
               <span className="text-sm text-gray-500">Disponible sur Windows.</span>
               <a 
-                href="./mac.html" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#mac-waitlist" 
                 className="text-xs text-snap-yellow hover:text-yellow-300 underline underline-offset-2 transition-colors"
               >
                 Utilisateur Mac ? Cliquez ici pour être prévenu.
@@ -197,6 +195,37 @@ const App: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* MAC WAITLIST SECTION */}
+      <section id="mac-waitlist" className="py-20 bg-snap-dark border-t border-gray-800">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+            Bientôt sur macOS ?
+          </h2>
+          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            Laissez votre email pour être le premier prévenu de la sortie de SnapSafe pour Mac.
+          </p>
+          <form 
+            action="https://formspree.io/f/mnneyjoj" 
+            method="POST" 
+            className="mt-4 flex flex-col sm:flex-row gap-2 max-w-md mx-auto"
+          >
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Votre adresse email" 
+              required 
+              className="flex-grow px-4 py-3 rounded-md bg-slate-800 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            />
+            <button 
+              type="submit" 
+              className="bg-yellow-400 text-slate-900 font-bold py-3 px-6 rounded-md hover:bg-yellow-300 transition-colors"
+            >
+              Me prévenir !
+            </button>
+          </form>
         </div>
       </section>
 
